@@ -3,4 +3,4 @@ services:
     name: character-analysis
     env: python
     buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput && python manage.py migrate"
-    startCommand: gunicorn character_analysis.wsgi:application
+    startCommand: "gunicorn character_analysis.wsgi:application"
