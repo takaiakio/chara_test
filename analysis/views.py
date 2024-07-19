@@ -10,7 +10,7 @@ from sklearn.decomposition import PCA
 import urllib
 
 def handle_uploaded_file(f):
-    data = pd.read_csv(f, encoding='shift_jis')
+    data = pd.read_csv(f, encoding='uft-8')
     return data
 
 def upload_file(request):
