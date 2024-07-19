@@ -1,1 +1,1 @@
-web: gunicorn character_analysis.wsgi:application
+web: gunicorn character_analysis.wsgi
